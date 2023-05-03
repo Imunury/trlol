@@ -1,0 +1,21 @@
+.main_container{
+    color: white;
+    text-align: center;
+    height: auto;
+}
+
+.main_content{
+    height: 450px;
+}
+
+#main_start_btn{
+    width: 70%;
+    height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    background-color: cornflowerblue;
+}
+
