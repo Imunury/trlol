@@ -5,5 +5,5 @@
 </template>
 
 <style>
- @import "./css/HeadBar.css";
+ @import "../css/HeadBar.css";
 </style>
