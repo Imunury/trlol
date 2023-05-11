@@ -3,6 +3,7 @@ import MainPage from '../views/MainPage.vue'
 import StartPage from '../views/StartPage.vue'
 import QuestionPage from '../views/QuestionPage.vue'
 
+
 const routes = [
     {
         path: '/',
@@ -14,6 +15,7 @@ const routes = [
     },
     {
         path: '/question',
+        name: QuestionPage,
         component: QuestionPage,
     }
 ]

@@ -2,7 +2,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import HeaderBar from './components/HeadBar.vue'
 import router from './router'
+import axios from 'axios';
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+app.config.globalProperties.$http = axios
+app.use(router)
+app.mount('#app')
+
 // createApp(App).mount('#app')
-createApp(HeaderBar).mount('#head_bar')
+createApp(HeaderBar).use(router).mount('#head_bar')
