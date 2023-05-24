@@ -1,54 +1,80 @@
 <template>
     <div class="main_container">
         <div class="question_content">
-            <img class="question_img" src="../assets/img/img1.png" />
+            <!-- <img class="question_img" src="../assets/img/img1.png" /> -->
         </div>
-        <div class="question_container" v-if="data">
-            <h2>{{ data.question }}</h2>
-            <button>
-                {{data.choices[0]}}
+        <div class="question_container">
+            <!-- v-if="data" -->
+            <h2>
+                <!-- {{ data.question }} -->
+                asad
+            </h2>
+            <button v-on:click="check1">
+                <!-- {{data.choices[0]}} -->
+                asd
             </button>
-            <button>
-                {{ data.choices[1] }}
+            <button v-on:click="check2">
+                <!-- {{ data.choices[1] }} -->
+                asd
             </button>
-        </div>
 
-        <div>
         </div>
 
     </div>
 </template>
 
 <script>
-// axios.get('http://121.147.56.131:8080/questions')
-//     .then(response => {
-//         console.log(response.data); // 응답 데이터 출력
-//     })
-//     .catch(error => {
-//         console.error(error);
-//     });
+import axios from 'axios'
+
+
+// export default {
+//     name: 'QuestionPage',
+//     data() {
+//         return {
+//             data: null
+//         }
+//     },
+//     created() {
+//         this.getData()
+//     },
+//     methods: {
+//         async getData() {
+//             try {
+//                 const response = await this.$http.get('http://121.147.56.131:8080/questions/3')
+//                 this.data = response.data
+//             } catch (error) {
+//                 console.log(error)
+//             }
+//         }
+//     }
+// }
+
 export default {
-    name: 'QuestionPage',
-    data() {
+    data: function () {
         return {
-            data: null
+            test1: '',
+            test2: '',
         }
-    },
-    created() {
-        this.getData()
     },
     methods: {
-        async getData() {
-            try {
-                const response = await this.$http.get('http://121.147.56.131:8080/questions/3')
-                this.data = response.data
-            } catch (error) {
-                console.log(error)
+        check1: function () {
+            console.log(this.test1, this.test2)
+            var url = ""
+            var data = {
+                test1: 10,
+                test2: 20.
             }
+            axios(url, data)
+                .then(function (res) {
+                    console.log(res)
+                })
+                .catch(function (err) {
+                    console.log(err)
+                })
         }
+
     }
 }
-
 
 </script>
 

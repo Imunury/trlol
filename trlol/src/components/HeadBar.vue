@@ -1,7 +1,7 @@
 <template>
     <div id="header">
-        HeadBar
-            <button @click="goBack">이전</button>
+        <button @click="goBack"><img src="../assets/img/pre_arrow.png"></button>
+        <h1>TRLOL</h1>
     </div>
 </template>
 
