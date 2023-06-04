@@ -9,5 +9,9 @@ app.config.globalProperties.$http = axios
 app.use(router)
 app.mount('#app')
 
+router.push({ name: 'Main' }, () => {
+    window.scrollTo(0, 0)
+  }, { replace: true })
+
 // createApp(App).mount('#app')
 createApp(HeaderBar).use(router).mount('#head_bar')

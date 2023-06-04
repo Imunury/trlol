@@ -5,7 +5,7 @@
             <h1>룬</h1>
             <h2>성격 테스트</h2>
         </div>
-        <div><button id="main_start_btn"><a href="/test">시작하기</a></button></div>
+        <div><button id="main_start_btn"><a href="/start">시작하기</a></button></div>
         <div>
             <p>공유하기</p>
 
